@@ -55,7 +55,7 @@ searchBar.addEventListener("keyup", (press)=>{
   
   })
 
-
+//problemen met het filteren van item of dit nu gaat om de input in the searchbar of het filteren van films met de radiobuttons als ik .filter gebruik, wil het allemaal gewoon niet lukken.
 
 
 
