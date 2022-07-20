@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: aqua;
+  background-color: lightgreen;
   h1 {
     display: flex;
     justify-content: center;
@@ -18,21 +18,20 @@ body {
     margin: 40px 0px 25px 0px;
   }
 
-  nav{
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  
-    #radiobuttons {
-
+  nav {
     display: flex;
-    justify-content: center;
-    margin: 25px;
+    justify-content: space-around;
     list-style-type: none;
-    
-        li{
-            margin:10px; 
-        }
+
+    #radiobuttons {
+      display: flex;
+      justify-content: center;
+      margin: 25px;
+      list-style-type: none;
+
+      li {
+        margin: 10px;
+      }
+    }
   }
-}
 }

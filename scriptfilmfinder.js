@@ -1,6 +1,7 @@
 //Adding movies + links + posters to the DOM
 
 const selectMovies = document.getElementById("moviechoice");
+const movieList= movies;
 
 const addMoviestoDOM = movies.map((movie) => {
   newLi = document.createElement("li");
@@ -15,39 +16,50 @@ const addMoviestoDOM = movies.map((movie) => {
 });
 
 // change/switch on radiobuttons
+const radioBTNS = Array.from(document.getElementsByName("movieoption"));
 
-let radioBTNS = document.getElementsByName("movieoption");
-let rbAR = Array.from(radioBTNS);
-
-const handleOnChangeEvent = () => {
-  rbAR.forEach((btn) => {
-    btn.addEventListener("change", (event) => {
-      switch (event.target.value) {
+const handleOnchangeEvent = () => {
+  radioBTNS.forEach((event) => {
+    event.addEventListener("change", (btn) => {
+      switch (btn.target.value.toLowerCase()) {
         case "latestmovies":
-          console.log("latest works");
+          console.log(latestMoviesFilter);
           break;
         case "avengermovies":
-          "avengersworks";
+          console.log("avengermovies work");
           break;
-        case "xmenmovies":
-          console.log("xmen works");
+        case "x-menmovies":
+          console.log("x-men movies work");
           break;
         case "princessmovies":
-          console.log("I do work");
+          filterMovies("princess");
           break;
         case "batmanmovies":
-          console.log("batman works");
+          console.log("batman movies work");
           break;
+
         default:
-          console.log("default also works");
+          console.log("default movies works");
       }
     });
   });
 };
 
-//filtering movies
+//searchbar
 
-const filterMovies = (wordINMovie) => {
-  let filterdMovies= movies.filter((movie) => movie.title.includes(wordINMovie));
-  return filterdMovies
-};
+const searchBar = document.getElementById("searchbar"); 
+
+searchBar.addEventListener("keyup", (press)=>{
+
+  console.log (press.target.value);
+  
+  })
+
+
+
+
+
+ 
+
+
+  

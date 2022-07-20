@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="moviearray.js"></script>
     <script defer src="scriptfilmfinder.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Anouk's filmfinder</title>
   </head>
   <body>
     <h1>Anouk's filmfinder</h1>
     <div id="searchbar">
-    <input type="search" id="searchmovie" name="searchmovie" placeholder=" Search Movie"/>
-      </div>
-    </label>
+      <input
+        type="search"
+        id="searchmovie"
+        name="searchmovie"
+        placeholder=" Search Movie"
+      />
+    </div>
     <nav>
-      <ul>
+      <ul id="radiobuttons">
         <li>
           <input
             type="radio"
@@ -39,9 +44,9 @@
         <li>
           <input
             type="radio"
-            id="xmenmovies"
+            id="x-menmovies"
             name="movieoption"
-            value="xmenmovies"
+            value="x-menmovies"
           />
           <label for="xmenmovies">X-Men movies</label>
         </li>
@@ -69,8 +74,7 @@
     </nav>
 
     <main>
-      <ul id="moviechoice">
-      </ul>
+      <ul id="moviechoice"></ul>
     </main>
   </body>
 </html>
